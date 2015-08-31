@@ -13,7 +13,7 @@ first, fetch my public key
 ```
 curl https://www.franzoni.eu/keys/D1270819.txt | sudo apt-key add -
 ```
-then, add the proper line in /etc/apt/sources.list (or add a file in /etc/apt/sources.list.d with the appropriate content)
+then, add the proper line in ```/etc/apt/sources.list``` (or add a file in ```/etc/apt/sources.list.d``` with the appropriate content)
 
 ### Ubuntu Precise
 
@@ -70,7 +70,6 @@ repo_gpgcheck=1
 gpgcheck=0
 enabled=1
 gpgkey=https://www.franzoni.eu/keys/D1270819.txt
-Fedora 21/22/Rawhide
 ```
 
 ### Fedora 21/22/Rawhide:

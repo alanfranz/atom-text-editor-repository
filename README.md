@@ -3,6 +3,10 @@ If you came here for my repos containing [atom releases](https://github.com/atom
 
 **WARNING**:Since I don't rebuild such packages, it's upstream developers' responsibility to make them work. They should work on most recent Linuxes, if you find they don't just drop me an email and I'll remove such distro.
 
+I'm not affiliated with GitHub nor Atom developers; I created this mirror for my own consumption, but I think it may be useful to others.
+
+The upload of new packages is automated, and the mirror is usually updated within two hours since official release time.
+
 ## APT for Debian and Ubuntu
 first, fetch my public key
 

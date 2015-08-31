@@ -55,7 +55,7 @@ deb http://www.a9f.eu/apt/atom/debian jessie main
 
 ## YUM for Centos 7, Fedora 21+
 
-Use those repo files:
+Use those repo files, put their in content in ```/etc/yum.repos.d/atom.repo``` and then proceed with a ```yum install``` as usual:
 
 ### Centos 7
 ```

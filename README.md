@@ -8,11 +8,14 @@ I'm not affiliated with GitHub nor Atom developers; I created this mirror for my
 The upload of new packages is automated, and the mirror is usually updated within two hours since official release time.
 
 ## APT for Debian and Ubuntu
-first, fetch my public key
+first, fetch my public key by using **either** line from below (uncomment and launch the second if the first fails)
 
 ```
-curl https://www.franzoni.eu/keys/D1270819.txt | sudo apt-key add -
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv D1270819
+#curl https://www.franzoni.eu/keys/D1270819.txt | sudo apt-key add -
 ```
+
+
 then, add the proper line in ```/etc/apt/sources.list``` (or add a file in ```/etc/apt/sources.list.d``` with the appropriate content)
 
 ### Ubuntu Precise

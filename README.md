@@ -1,5 +1,5 @@
 ## Atom Text Editor APT/YUM Mirror
-If you came here for my repos containing [atom releases](https://github.com/atom/atom/releases) (it's not a rebuild, it's just an upload of the original packages for easier upgrade ), Here's your reward.
+This is my own mirror containing [atom releases](https://github.com/atom/atom/releases) .It's not a rebuild, it's just an upload of the original packages for easier upgrade. Check the MD5 or the content yourself if you don't trust me.
 
 **WARNING**:Since I don't rebuild such packages, it's upstream developers' responsibility to make them work. They should work on most recent Linuxes, if you find they don't just drop me an email and I'll remove such distro.
 

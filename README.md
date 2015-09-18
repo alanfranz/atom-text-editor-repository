@@ -7,6 +7,12 @@ I'm not affiliated with GitHub nor Atom developers; I created this mirror for my
 
 The upload of new packages is automated, and the mirror is usually updated within two hours since official release time.
 
+## **GOTCHA**: Updating the package while Atom is open
+
+I've found that sometimes updating the package while Atom is open will yield strange issues - e.g. the old process won't die when shutdown (but the GUI **will** disappear - otherwise it would be far too easy to detect an issue) and the new process will try to to start but get locked.
+
+Since I don't rebuild/modify such packages, I cannot change this behaviour; I can just suggest that, if you find that Atom doesn't start after an update, you run a ```killall atom``` command before panicking.
+
 ## APT for Debian and Ubuntu
 first, fetch my public key by using **either** line from below (uncomment and launch the second if the first fails)
 

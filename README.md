@@ -22,7 +22,7 @@ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv D1270819
 ```
 
 
-then, add the proper line in ```/etc/apt/sources.list``` (or add a file in ```/etc/apt/sources.list.d``` with the appropriate content)
+then, add the proper line (as shown below) in ```/etc/apt/sources.list``` (or add a file in ```/etc/apt/sources.list.d``` with the appropriate content).
 
 ### Ubuntu Precise
 

@@ -54,6 +54,18 @@ deb http://www.a9f.eu/apt/atom/ubuntu utopic main
 deb http://www.a9f.eu/apt/atom/ubuntu vivid main
 ```
 
+### Ubuntu Wily
+
+```
+deb http://www.a9f.eu/apt/atom/ubuntu wily main
+```
+
+### Ubuntu Xenial
+
+```
+deb http://www.a9f.eu/apt/atom/ubuntu xenial main
+```
+
 ### Debian Squeeze
 
 ```
@@ -70,6 +82,12 @@ deb http://www.a9f.eu/apt/atom/debian wheezy main
 
 ```
 deb http://www.a9f.eu/apt/atom/debian jessie main
+```
+
+### Debian Sid
+
+```
+deb http://www.a9f.eu/apt/atom/debian sid main
 ```
 
 ## YUM for Centos 7, Fedora 21+

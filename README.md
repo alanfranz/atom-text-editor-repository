@@ -23,7 +23,7 @@ Since I don't rebuild/modify such packages, I cannot change this behaviour; I ca
 first, fetch my public key by using **either** line from below (uncomment and launch the second if the first fails)
 
 ```
-sudo apt-key adv --keyserver keyserver.ubuntu.com --recv D1270819
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv A1D267C030C00DCB877900ED939C61C5D1270819
 #curl https://www.franzoni.eu/keys/D1270819.txt | sudo apt-key add -
 ```
 

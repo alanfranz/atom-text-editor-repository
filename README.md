@@ -116,3 +116,18 @@ gpgcheck=0
 enabled=1
 gpgkey=https://www.franzoni.eu/keys/D1270819.txt
 ```
+
+## FAQ
+
+### You're hosting this right on your website. I must trust you in order to use that mirror.
+
+Yes, of course.
+
+### Why aren't RPM packages signed?
+
+AFAIK upstream RPM packages are unsigned. Since I don't rebuild them and I want them to be unaltered, they're unsigned as well on my repo. By the way the repo itself is signed, so you shouldn't mind about rogue packages being downloaded through an http-only connection.
+
+### Whoah, your repos are http only! No https!
+
+So are the repos of most of your distributions. Integrity is assured by the repos' signature, and such signature is fetched via https (or via gpg keyserver with full fingerprinting).
+

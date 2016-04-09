@@ -1,5 +1,5 @@
 ## Atom Text Editor APT/YUM Mirror
-This is my own mirror containing [atom releases](https://github.com/atom/atom/releases) . **THIS IS NOT A REBUILD** like other repos around, it's **just an upload of the original packages** for easier install and upgrade. Check the MD5 or the content yourself if you don't trust me.
+This is my own mirror containing Linux [releases](https://github.com/atom/atom/releases) for [Atom](https://atom.io), the *hackable text editor for the 21st century* . **THIS IS NOT A REBUILD** like other repos around, it's **just an upload of the original packages** for easier install and upgrade. Check the MD5 or the content yourself if you don't trust me.
 
 **WARNING**:Since I don't rebuild such packages, it's upstream developers' responsibility to make them work. They should work on most recent Linuxes, if you find they don't just drop me an email and I'll remove such distro.
 

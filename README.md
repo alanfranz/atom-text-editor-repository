@@ -105,7 +105,7 @@ enabled=1
 gpgkey=https://www.franzoni.eu/keys/D1270819.txt
 ```
 
-### Fedora 21/22/Rawhide:
+### Fedora 21/22/23/Rawhide:
 
 ```
 [atom]

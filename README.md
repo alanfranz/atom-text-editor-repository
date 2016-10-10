@@ -42,24 +42,6 @@ deb http://www.a9f.eu/apt/atom/ubuntu precise main
 deb http://www.a9f.eu/apt/atom/ubuntu trusty main
 ```
 
-### Ubuntu Utopic
-
-```
-deb http://www.a9f.eu/apt/atom/ubuntu utopic main
-```
-
-### Ubuntu Vivid
-
-```
-deb http://www.a9f.eu/apt/atom/ubuntu vivid main
-```
-
-### Ubuntu Wily
-
-```
-deb http://www.a9f.eu/apt/atom/ubuntu wily main
-```
-
 ### Ubuntu Xenial
 
 ```

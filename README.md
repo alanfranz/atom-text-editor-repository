@@ -90,7 +90,7 @@ deb http://www.a9f.eu/apt/atom/debian jessie main
 deb http://www.a9f.eu/apt/atom/debian sid main
 ```
 
-## YUM for Centos 7, Fedora 21+
+## YUM for Centos/RHEL and Fedora
 
 Use those repo files, put their in content in ```/etc/yum.repos.d/atom.repo``` and then proceed with a ```yum install``` as usual:
 
@@ -105,7 +105,7 @@ enabled=1
 gpgkey=https://www.franzoni.eu/keys/D1270819.txt
 ```
 
-### Fedora 21/22/23/24/Rawhide:
+### Fedora 23/24/Rawhide:
 
 ```
 [atom]

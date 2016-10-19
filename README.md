@@ -48,11 +48,12 @@ deb http://www.a9f.eu/apt/atom/ubuntu trusty main
 deb http://www.a9f.eu/apt/atom/ubuntu xenial main
 ```
 
-### Debian Squeeze
+### Ubuntu Yakkety
 
 ```
-deb http://www.a9f.eu/apt/atom/debian squeeze main
+deb http://www.a9f.eu/apt/atom/ubuntu yakkety main
 ```
+
 
 ### Debian Wheezy
 

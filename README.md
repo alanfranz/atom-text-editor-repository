@@ -45,7 +45,7 @@ apt-get install atom
 
 ## YUM for Centos/RHEL and Fedora
 
-Use those repo files, put their in content in ```/etc/yum.repos.d/atom.repo``` and then proceed with a ```yum install atom``` as usual:
+Use this repo file, put its in content in ```/etc/yum.repos.d/atom.repo``` and then proceed with a ```yum install atom``` or ```dnf install atom``` as usual:
        
 ```
 [atom]

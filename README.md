@@ -1,6 +1,8 @@
 ## Atom Text Editor APT/YUM Mirror
 This is my own mirror containing Linux [releases](https://github.com/atom/atom/releases) for [Atom](https://atom.io), the *hackable text editor for the 21st century* . **THIS IS NOT A REBUILD** like other repos around, it's **just an upload of the original packages** for easier install and upgrade. Check the MD5 or the content yourself if you don't trust me.
 
+**IMPORTANT**: repositories have been updated to use Bintray hosting. Update your yum-dnf-apt configurations!
+
 **WARNING**:Since I don't rebuild such packages, it's upstream developers' responsibility to make them work. They should work on most recent Linuxes, if you find they don't just drop me an email and I'll remove such distro.
 
 I'm not affiliated with GitHub nor Atom developers; I created this mirror for my own consumption, but I think it may be useful to others.
@@ -20,97 +22,44 @@ I've found that sometimes updating the package while Atom is open will yield str
 Since I don't rebuild/modify such packages, I cannot change this behaviour; I can just suggest that, if you find that Atom doesn't start after an update, you run a ```killall atom``` command before panicking.
 
 ## APT for Debian and Ubuntu
-first, fetch my public key by using **either** line from below (uncomment and launch the second if the first fails)
+first, fetch Bintray's public key:
 
 ```
-sudo apt-key adv --keyserver keyserver.ubuntu.com --recv A1D267C030C00DCB877900ED939C61C5D1270819
-#curl https://www.franzoni.eu/keys/D1270819.txt | sudo apt-key add -
+curl https://www.franzoni.eu/keys/D401AB61.txt | sudo apt-key add -
 ```
 
+Then, make sure ```apt-transport-https``` is installed;
 
-then, add the proper line for your distro and version, as shown below, in ```/etc/apt/sources.list``` (or add a new ```atom-text-editor.list``` file in ```/etc/apt/sources.list.d``` with the same content).
-
-### Ubuntu Precise
-
-```
-deb http://www.a9f.eu/apt/atom/ubuntu precise main
-```
-
-### Ubuntu Trusty
+Add the following content to ```/etc/apt/sources.list.d/atom.list```
 
 ```
-deb http://www.a9f.eu/apt/atom/ubuntu trusty main
+deb https://dl.bintray.com/alanfranz/atom-apt stable main
 ```
 
-### Ubuntu Xenial
+Then perform the usual
 
 ```
-deb http://www.a9f.eu/apt/atom/ubuntu xenial main
-```
-
-### Ubuntu Yakkety
-
-```
-deb http://www.a9f.eu/apt/atom/ubuntu yakkety main
-```
-
-
-### Debian Wheezy
-
-```
-deb http://www.a9f.eu/apt/atom/debian wheezy main
-```
-
-### Debian Jessie
-
-```
-deb http://www.a9f.eu/apt/atom/debian jessie main
-```
-
-### Debian Sid
-
-```
-deb http://www.a9f.eu/apt/atom/debian sid main
+apt-get update
+apt-get install atom
 ```
 
 ## YUM for Centos/RHEL and Fedora
 
-Use those repo files, put their in content in ```/etc/yum.repos.d/atom.repo``` and then proceed with a ```yum install``` as usual:
-
-### Centos 7
+Use those repo files, put their in content in ```/etc/yum.repos.d/atom.repo``` and then proceed with a ```yum install atom``` as usual:
+       
 ```
 [atom]
 name=atom
-baseurl=http://www.a9f.eu/yum/atom/centos/$releasever/$basearch
+baseurl=https://dl.bintray.com/alanfranz/atom-yum
 repo_gpgcheck=1
 gpgcheck=0
 enabled=1
-gpgkey=https://www.franzoni.eu/keys/D1270819.txt
-```
-
-### Fedora 23/24/Rawhide:
-
-```
-[atom]
-name=atom
-baseurl=http://www.a9f.eu/yum/atom/fedora/$releasever/$basearch
-repo_gpgcheck=1
-gpgcheck=0
-enabled=1
-gpgkey=https://www.franzoni.eu/keys/D1270819.txt
+gpgkey=https://www.franzoni.eu/keys/D401AB61.txt
 ```
 
 ## FAQ
 
-### You're hosting this right on your website. I must trust you in order to use that mirror.
-
-Yes, of course.
-
 ### Why aren't RPM packages signed?
 
 AFAIK upstream RPM packages are unsigned. Since I don't rebuild them and I want them to be unaltered, they're unsigned as well on my repo. By the way the repo itself is signed, so you shouldn't mind about rogue packages being downloaded through an http-only connection.
-
-### Whoah, your repos are http only! No https!
-
-So are the repos of most of your distributions. Integrity is assured by the repos' signature, and such signature is fetched via https (or via gpg keyserver with full fingerprinting).
 

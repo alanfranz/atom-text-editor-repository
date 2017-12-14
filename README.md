@@ -8,9 +8,9 @@ I'm not affiliated with GitHub nor Atom developers; I created this mirror for my
 
 The upload of new packages is automated, and the mirror is usually updated within two hours since official release time.
 
-## This is a repository for stable versions only
+## This is a repository for stable amd64 versions only
 
-I'm not hosting beta releases and I don't plan to, right now (open a ticket if you're really interested); I plan to host stable releases only.
+I'm not hosting beta releases and I don't plan to, right now (open a ticket if you're really interested); I plan to host stable releases only, and **for amd64 only** (there's no i386/arm/other arch available upstream).
 
 Currently Atom follows a linear development model, a-la-Chrome, so there's just one stable, supported version at one given time; if they choose at a certain point to support multiple stable versions (e.g. 1.x and 2.x) I'll probably split and multiply the repo to let the user choose its preferred version.
 
